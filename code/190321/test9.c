@@ -34,14 +34,14 @@ int main()
             break;
 
         printf("복지카드를 가지고 계신가요. (yes = 1, no = 0) : ");
-        scanf("%d", card[0]);
+        scanf("%d", &card[0]);
         
         // 복지카드 소지
         if (card[0] == 1)           
             break;
 
         printf("국가유공자카드를 가지고 계신가요. (yes = 1, no = 0) : ");
-        scanf("%d", card[1]);
+        scanf("%d", &card[1]);
         
         // 입력 종료
         break;                      
