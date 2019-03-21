@@ -1,0 +1,10 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.encoding": "utf8",
+    // "clang.executable": "D:/programming/llvm-6.0.1.src.tar.xz.sig",
+    "files.associations": {
+        "math.h": "c",
+        "windows.h": "c"
+    }
+}
