@@ -18,25 +18,33 @@ int main()
     {   // 데이터 입력
         printf("나이를 입력해 주십시오 : ");
         scanf("%d", &age);
-        if (age < condition_age[1])     // 13세 미만
+        
+        // 13세 미만
+        if (age < condition_age[1])     
             break;
 
         printf("입장 시간을 입력해 주십시오(예시 17:10) : ");
         scanf("%d:%d", &hour, &minute);
-        if (hour > 18 || (hour == 17 && minute >= 10))      // 17:10 이상
+        
+        // 17:10 이상
+        if (hour >= 18 || (hour == 17 && minute >= 10))      
             break;
-
-        if (age >= condition_age[3])    // 70세 이상
+        // 70세 이상
+        if (age >= condition_age[3])    
             break;
 
         printf("복지카드를 가지고 계신가요. (yes = 1, no = 0) : ");
         scanf("%d", card[0]);
-        if (card[0] == 1)       // 복지카드 소지
+        
+        // 복지카드 소지
+        if (card[0] == 1)           
             break;
 
         printf("국가유공자카드를 가지고 계신가요. (yes = 1, no = 0) : ");
         scanf("%d", card[1]);
-        break;                  // 입력 종료
+        
+        // 입력 종료
+        break;                      
     }
 
     type = check(age, hour, minute, card);  // 표 구분
@@ -71,7 +79,7 @@ int check(int age, int hour, int minute, int card[])
     ////////////////////////////////////////////////
     if (age < condition_age[1])
         return 2;
-    else if (hour > 18 || (hour == 17 && minute >= 50))
+    else if (hour >= 18 || (hour == 17 && minute >= 50))
         return 2;
     
     ////////////////////////////////////////////////
