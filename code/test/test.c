@@ -12,3 +12,5 @@ int main()
     system("pause");
     return 0;
 }
+
+// 실험 결과 : 이상 없음
