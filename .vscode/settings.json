@@ -6,5 +6,6 @@
     "files.associations": {
         "math.h": "c",
         "windows.h": "c"
-    }
+    },
+    "maven.view": "flat"
 }
